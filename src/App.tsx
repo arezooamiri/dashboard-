@@ -1,18 +1,16 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import './App.css'
+import "./App.css";
+import Layout from "./components/Layout";
 
 function App() {
-
-
   return (
-    <>
-      <div className='text-red-600'>
-          hi there
-      </div>
-        
-    </>
-  )
+   
+      <Layout>
+        <div>main area</div>
+      </Layout>
+    
+  );
 }
 
-export default App
+export default App;
