@@ -64,9 +64,10 @@ const SideBar = () => {
           ))}
         </div>
       </div>
-      <div className="w-5/6  rounded-l " style={{backgroundColor: "rgb(250,249,255)" }}>
-          
-      </div>
+      <div
+        className="w-5/6  rounded-l "
+        style={{ backgroundColor: "rgb(250,249,255)" }}
+      ></div>
     </div>
   );
 };
