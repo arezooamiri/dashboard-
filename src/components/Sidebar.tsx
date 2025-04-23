@@ -10,6 +10,10 @@ import TripSvg from "../assets/icon/Trip";
 const SideBar = () => {
   const listMenu = [
     {
+      icon:<HomeSvg/>,
+      name:"Home"
+    },
+    {
       icon: <AllTripSvg />,
       name: "All Trips",
     },
@@ -37,7 +41,7 @@ const SideBar = () => {
           <TripSvg />
           <span className="font-bold text-4xl text-black">Tripit</span>
         </div>
-        <button className="w-48 h-12 rounded-xl bg-blue-600 text-white  ">
+        <button className="w-48 h-10 rounded-xl bg-blue-600 text-white  ">
           <div className="flex justify-center  gap-2  ">
             {" "}
             New trip
@@ -45,18 +49,12 @@ const SideBar = () => {
           </div>
         </button>
 
-        <div>
-          <div
-            className="flex gap-4 items-center w-48 p-2 not-first-of-type: font-semibold text-base rounded-xl pl-4 text-black"
-            style={{ backgroundColor: "rgb(250,249,255)" }}
-          >
-            <HomeSvg />
-            Home
-          </div>
+        <div className="flex flex-col gap-2">
+          
           {listMenu.map((item, index) => (
             <div
               key={index}
-              className="flex gap-4 items-center w-48 p-2 font-semibold text-base rounded-xl pl-4 text-black"
+              className="flex gap-2 items-center w-48 p-2 font-medium text-sm rounded-xl pl-4 text-black"
             >
               {item.icon}
               {item.name}
