@@ -39,10 +39,10 @@ const SideBar = () => {
       <div className="flex flex-col gap-4 items-center">
         <div className="flex gap-4 p-6">
           <TripSvg />
-          <span className="font-bold text-4xl text-black">Tripit</span>
+          <span className="font-medium text-2xl text-black">Tripit</span>
         </div>
-        <button className="w-48 h-10 rounded-xl bg-blue-600 text-white  ">
-          <div className="flex justify-center  gap-2  ">
+        <button className="w-44 h-8 rounded-xl bg-blue-600 text-white  ">
+          <div className="flex justify-center text-sm   gap-2  ">
             {" "}
             New trip
             <PlusSvg />
@@ -52,13 +52,13 @@ const SideBar = () => {
         <div className="flex flex-col gap-2">
           
           {listMenu.map((item, index) => (
-            <div
+            <button
               key={index}
-              className="flex gap-2 items-center w-48 p-2 font-medium text-sm rounded-xl pl-4 text-black"
+              className="flex gap-2 items-center w-48 p-2 cursor-pointer font-medium text-sm rounded-xl pl-4 text-black"
             >
               {item.icon}
               {item.name}
-            </div>
+            </button>
           ))}
         </div>
       </div>
