@@ -7,7 +7,7 @@ import ReportTravel from "./ReportTravel";
 
 const Layout = () => {
   return (
-    <div className=" grid grid-cols-5 gap-4 h-[100vh] p-4 ">
+    <div className=" grid grid-cols-5 gap-6 h-[100vh] p-4 ">
       <SideBar />
       <div className="flex flex-col col-start-2 col-end-5 ">
         <Header />
