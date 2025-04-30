@@ -5,6 +5,8 @@ import ProfileDetail from "./ProfileDetail";
 import BannerTravel from "./Bannertravel";
 import ReportTravel from "./ReportTravel";
 import TravelDetail from "./TravelDetail";
+import CityMap from "./CityMap";
+import Todos from "./Todos";
 
 const Layout = () => {
   return (
@@ -15,9 +17,11 @@ const Layout = () => {
         <div className="grid grid-cols-4 gap-4 h-2/6 pt-8  ">
           <BannerTravel />
           <ReportTravel />
-          <TravelDetail/>
-        </div>
+          <TravelDetail />
 
+          <CityMap />
+          <Todos />
+        </div>
       </div>
       <ProfileDetail />
     </div>

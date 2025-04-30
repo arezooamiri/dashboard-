@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 
+
 :root {
   
   font-family: "Sora", sans-serif;
@@ -13,7 +14,7 @@
 
 body{
   background-color:rgb(250,249,255);
-  height: 100vh;
+  
   
 }
 
