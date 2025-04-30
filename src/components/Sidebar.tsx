@@ -45,27 +45,28 @@ const SideBar = () => {
   ];
   
   return (
-    <div className="col-span-1 flex flex-col items-center  justify-between gap-8  bg-white rounded-xl">
-      <div className="flex flex-col gap-4 items-center">
+    <div className="col-span-1 flex flex-col items-center  justify-between   bg-white rounded-xl">
+      <div className="flex flex-col gap-2 items-center justify-center">
         <div className="flex gap-4 p-6">
           <TripSvg />
           <span className="font-medium text-2xl text-black">Tripit</span>
         </div>
-        <button className="w-44 h-8 rounded-xl bg-blue-600 text-white  ">
-          <div className="flex justify-center text-sm   gap-2  ">
+        <div className="w-44 h-9 flex justify-center gap-2 items-center rounded-xl bg-blue-600 text-white ">
+          <button className=" text-sm    ">
             {" "}
             New trip
-            <PlusSvg />
-          </div>
-        </button>
+           
+          </button>
+          <PlusSvg />
+        </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col pt-6 gap-1">
           
           {listMenu.map((item, index) => (
             <NavLink
               to={item.path}
               key={index}
-              className={({isActive})=>`flex gap-2 items-center w-48 p-2 cursor-pointer font-medium text-sm rounded-xl pl-4 text-black ${isActive? 'bg-pink-100 rounded-2xl':''}`}
+              className={({isActive})=>`flex gap-4 items-center w-48 p-2 cursor-pointer font-medium text-sm rounded-xl pl-4 text-black ${isActive? 'bg-[rgb(250,249,255)] rounded-2xl':''}`}
              
             >
               {item.icon}

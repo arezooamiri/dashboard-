@@ -5,7 +5,7 @@ import SearchSvg from "../assets/icon/Search";
 export default function Header() {
   const navigate=useNavigate()
   return (
-    <div className=" border-b border-gray-300 text-black h-1/12 flex  justify-between  p-2">
+    <div className=" border-b border-gray-300 text-black h-1/12 flex  text-sm justify-between  p-2">
       <div className="flex justify-center gap-6">
         <button >Travels</button>
          <button onClick={()=>navigate('/travels')}><ArrowSvg /></button>
