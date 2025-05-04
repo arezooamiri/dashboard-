@@ -8,6 +8,7 @@ import TransportSvg from "../assets/icon/Transport";
 import TravelSvg from "../assets/icon/Travels";
 import TripSvg from "../assets/icon/Trip";
 import { NavLink } from "react-router-dom";
+import WeeklyWeather from "./WeeklyWheather";
 
 const SideBar = () => {
   
@@ -75,10 +76,7 @@ const SideBar = () => {
           ))}
         </div>
       </div>
-      <div
-        className="w-5/6  rounded-l "
-        style={{ backgroundColor: "rgb(250,249,255)" }}
-      ></div>
+       <WeeklyWeather city={'Rome'}/>
     </div>
   );
 };

@@ -1,21 +1,27 @@
-import axios from "axios";
+import { useQuery } from "@tanstack/react-query";
+import { geocodeCity } from "../utils/geocodeCity";
 
-interface WeatherResponse{
-    current_condition:[
-        {
-            temp_C:string;
-            weatherDesc:[{value:string}]
-        }
-    ];
+
+
+
+
+
+export function useWeeklyWeather(city:string){
+    const apiKey=import.meta.env.REACT_APP_OWM_KEY!;
+    
+
+    return useQuery({
+        queryKey:['weather',city],
+        queryFn:async()=>{
+            const{lat,lon}=await geocodeCity(city,apiKey);
+           
+            const res=await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly,alerts&units=metric&appid=${apiKey}`)
+            const data=await res.json();
+            return data.daily.slice(0,7)
+        },
+        enabled: !!city,
+        staleTime: 1000 * 60 * 10,
+        
+    })
 
 }
-
-const fetchWeather= async (city:string): Promise<WeatherResponse> =>{
-    const response=await axios.get(`https://wttr.in/${city}?format=j1`);
-    return response.data
-}
-
-export default fetchWeather;
-
-
-
