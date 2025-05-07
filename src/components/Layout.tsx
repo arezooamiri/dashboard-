@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+
 import SideBar from "./Sidebar";
 import Header from "./Header";
 import ProfileDetail from "./ProfileDetail";

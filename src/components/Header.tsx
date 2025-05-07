@@ -1,7 +1,7 @@
-import { Router, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import ArrowSvg from "../assets/icon/Arrow";
 import SearchSvg from "../assets/icon/Search";
-import Notifcation from "../assets/icon/Notification";
+
 
 export default function Header() {
   const navigate = useNavigate();

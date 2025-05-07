@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import AllTripSvg from "../assets/icon/AllTrip";
 import AttractionSvg from "../assets/icon/Attraction";
 import HomeSvg from "../assets/icon/Home";

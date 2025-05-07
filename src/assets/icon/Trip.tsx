@@ -1,4 +1,4 @@
-import { SVGProps } from "react";
+
 
 const TripSvg = (props: React.SVGProps<SVGSVGElement>) => {
   return (
