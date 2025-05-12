@@ -3,7 +3,7 @@ import Notifcation from "../assets/icon/Notification";
 
 export default function Profile() {
   return (
-    <div className="flex justify-between items-center border-b border-gray-300 p-2">
+    <div className="flex justify-between items-center border-b border-gray-300 p-3">
       <div className="flex justify-around gap-6
        items-center">
         <EnglandFlagSvg />

@@ -16,7 +16,7 @@ const SideBar = () => {
     {
       icon:<HomeSvg/>,
       name:"Home",
-      path:""
+      path:"/"
     },
     {
       icon: <AllTripSvg />,
@@ -52,7 +52,7 @@ const SideBar = () => {
           <TripSvg />
           <span className="font-medium text-2xl  text-black">Tripit</span>
         </div>
-        <div className="w-44 md:w-30 sm:w-10 h-9 flex justify-center gap-2 items-center rounded-xl bg-blue-600 text-white ">
+        <div className="w-44 md:w-40 sm:w-10 h-9 flex justify-center gap-2 items-center rounded-xl bg-blue-600 text-white ">
           <button className=" md:text-sm lg:text-base    ">
             {" "}
             New trip
@@ -67,7 +67,7 @@ const SideBar = () => {
             <NavLink
               to={item.path}
               key={index}
-              className={({isActive})=>`flex gap-4 items-center w-48 md:w-40 sm:w-30 p-2 cursor-pointer font-medium text-sm rounded-xl pl-4 text-black ${isActive? 'bg-[rgb(250,249,255)] rounded-2xl':''}`}
+              className={({isActive})=>`flex gap-4 items-center w-48 md:w-44 sm:w-30 p-2 cursor-pointer lg:font-medium   lg:text-base md:text-xs md:font-light rounded-xl pl-4 text-black ${isActive? 'bg-[rgb(250,249,255)] rounded-2xl':''}`}
              
             >
               {item.icon}

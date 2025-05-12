@@ -7,7 +7,7 @@ export default function Header() {
   const navigate = useNavigate();
   return (
     
-      <div className=" border-b border-gray-300 text-black p-3 flex  text-sm justify-between   items-center">
+      <div className=" border-b border-gray-300 text-black p-3 pb-5  flex  text-sm justify-between   items-center">
         <div className="flex justify-center gap-6">
           <button>Travels</button>
           <button onClick={() => navigate("/travels")}>
